@@ -1,0 +1,149 @@
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.menu{
+  display: flex;
+  gap: 2em;
+}
+.searchbox{
+  margin-top: 0.2em;
+  font-size: larger;
+  height: 2em;
+}
+.search-icon{
+  width: 20px;
+  height: 20px;
+  margin-top: 0.6em;
+  margin-left:0.6em;
+}
+.search-btn{
+  font-size: larger;
+  height: 2.25em;
+  width: 40px;
+  background-color: blue;
+  margin-top: 0.2em;
+  color: white;
+  cursor: pointer;
+}
+.search{
+  display: flex;
+}
+.search-btn:active{
+  font-size: larger;
+  height: 2.25em;
+  width: 40px;
+  background-color: purple;
+  margin-top: 0.2em;
+  color: white;
+}
+.card{
+  display: inline-block;
+  height: 25em;
+  width: 15em;
+  border: 1px solid rgb(208, 205, 205);
+  padding-bottom: 1em;
+  margin-right: 3em;
+  margin-bottom: 3em;
+}
+.image{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 15em;
+  height: 20em;
+}
+.image2{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 18em;
+  height: 25em;
+}
+.fav{
+  height: 15px;
+  width: 15px;
+  padding-top: 5px;
+}
+.container{
+  width: 100%;
+  margin-left: 1px;
+}
+.popup{
+  position: fixed;
+  top: 5em;
+  right:10em;
+  z-index: 99;
+  width:10%;
+}
+.pop{
+  display: none;
+  position: relative;
+  right: -2em;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding-left: 4em;
+  padding-right: 4em;
+  margin-bottom: 2em;
+  animation: 0.8s pop .45s linear;
+  animation-fill-mode: forwards;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@keyframes pop {
+  from {position:sticky; right: -2em;}
+  to {right: 0em; display: none}
+}
+.movieclick{
+  margin-top:4em
+}
+.movie{
+  display: flex;
+  gap: 1em;
+}
+td{ 
+  color:darkslategrey;
+  padding-right: 15em;
+  padding-bottom: 10px;
+}
+.story{
+  max-height: 50em;
+  max-width: max-content;
+  text-align: justify;
+}
+@media screen and (max-device-width: 768px){
+  .nav{
+      display: block;
+      font-size: 12px;
+  }
+  .container{
+      width: 100%;
+  }
+  .card{
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 3em;
+  }
+}
+@media screen and (max-device-width: 425px){
+  .nav{
+      display: block;
+      font-size: 10px;
+  }
+  body{
+      font-size: 9px;
+  }
+}
+@media screen and (max-device-width: 375px){
+  .nav{
+      font-size: 9px;
+  }
+}
+@media screen and (max-device-width: 320px){
+  .nav{
+      font-size: 7.5px;
+  }
+}
